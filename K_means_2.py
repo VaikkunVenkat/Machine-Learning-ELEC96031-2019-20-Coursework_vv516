@@ -6,6 +6,7 @@ from sklearn.cluster import KMeans
 N = 15
 K = 2
 X = np.array([[-3,0] , [-2,-2] , [-1,-1] , [-1,-4] , [0,-3] , [1,-2], [1,-1] , [1,1], [1,3] , [3,0],[3,3], [4,0], [4,2], [5,3], [5,-2]])
+y = np.array([1,2,3])
 
 kmeans = KMeans(n_clusters=2, random_state=0).fit(X)
 print("Number of iterations till convergence: " + str(kmeans.n_iter_ ))
@@ -30,4 +31,3 @@ plt.title('Finalized K-means clustering result')
 plt.grid()
 
 plt.show()
-
